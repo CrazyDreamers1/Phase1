@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie ListVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MovieListVC" customModule="_st_phase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-cN-S08">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="151" id="hNu-5O-IBq" customClass="MovieTableViewCell" customModule="_st_phase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNu-5O-IBq" id="vw0-Y9-HiB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-not-found" translatesAutoresizingMaskIntoConstraints="NO" id="g1L-Yo-HBC">
+                                                    <rect key="frame" x="20" y="34" width="56" height="83.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="1yl-Vw-7RT"/>
+                                                        <constraint firstAttribute="height" constant="83.5" id="Qmf-JG-0Vi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Captain Marvel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfl-mT-TVa">
+                                                    <rect key="frame" x="82" y="11" width="88.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fu-IH-4se">
+                                                    <rect key="frame" x="82" y="26" width="312" height="115"/>
+                                                    <string key="text">In celebration of the publisher 's 75th anniversary, the hour-long special will take a detailed look at the company's journey from fledgling comics publisher to multi-media juggernaut. Hosted by Emily VanCamp (S.H.I.E.L.D. Agent Sharon Carter</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g1L-Yo-HBC" firstAttribute="top" secondItem="vw0-Y9-HiB" secondAttribute="topMargin" priority="800" constant="5" id="FKI-qd-Nzf"/>
+                                                <constraint firstItem="7Fu-IH-4se" firstAttribute="leading" secondItem="Zfl-mT-TVa" secondAttribute="leading" id="FZG-WJ-Zxl"/>
+                                                <constraint firstItem="g1L-Yo-HBC" firstAttribute="centerY" secondItem="vw0-Y9-HiB" secondAttribute="centerY" id="Ipe-OD-PvX"/>
+                                                <constraint firstItem="Zfl-mT-TVa" firstAttribute="top" secondItem="vw0-Y9-HiB" secondAttribute="topMargin" id="LYE-4V-66l"/>
+                                                <constraint firstAttribute="bottom" secondItem="7Fu-IH-4se" secondAttribute="bottom" priority="900" constant="5" id="PrB-Ae-GC1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="g1L-Yo-HBC" secondAttribute="bottom" priority="800" constant="5" id="VIh-bi-zy5"/>
+                                                <constraint firstItem="Zfl-mT-TVa" firstAttribute="leading" secondItem="g1L-Yo-HBC" secondAttribute="trailing" constant="6" id="ied-9F-A6k"/>
+                                                <constraint firstItem="7Fu-IH-4se" firstAttribute="top" secondItem="Zfl-mT-TVa" secondAttribute="bottom" id="pKd-uX-D7U"/>
+                                                <constraint firstItem="g1L-Yo-HBC" firstAttribute="leading" secondItem="vw0-Y9-HiB" secondAttribute="leadingMargin" id="vBA-As-0B2"/>
+                                                <constraint firstItem="7Fu-IH-4se" firstAttribute="trailing" secondItem="vw0-Y9-HiB" secondAttribute="trailingMargin" id="z6M-gj-hV3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieDescriptionLBL" destination="7Fu-IH-4se" id="3yZ-Ti-NEC"/>
+                                            <outlet property="moviePosterImage" destination="g1L-Yo-HBC" id="lA9-VG-FJi"/>
+                                            <outlet property="movieTitleLBL" destination="Zfl-mT-TVa" id="wX4-Sx-mzC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Vdd-CG-aJy"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ej9-6a-lEv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PTr-cN-S08" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8kO-LP-wRf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PTr-cN-S08" secondAttribute="trailing" id="MSj-fd-1hW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PTr-cN-S08" secondAttribute="bottom" id="QzY-TH-eRs"/>
+                            <constraint firstItem="PTr-cN-S08" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fbC-gC-Uis"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieTableView" destination="PTr-cN-S08" id="qEL-4e-S2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.37681159420291" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image-not-found" width="112.5" height="112.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
